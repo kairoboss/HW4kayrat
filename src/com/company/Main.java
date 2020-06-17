@@ -21,7 +21,6 @@ public class Main {
         }
     public static void medicHeal(){
         int n = (int)Math.floor(Math.random() * heroesHealth.length);
-int nothing = 0;
             if (heroesHealth[n] < 100 && heroesHealth[n]>0 && heroesHealth[3]>0){
                 Random random = new Random();
                 int heal = random.nextInt(100);
