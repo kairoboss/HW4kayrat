@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.Random;
 
 public class Main {
@@ -18,19 +19,19 @@ public class Main {
         }
 
 
+    }
+
+    public static void medicHeal() {
+        int n = (int) Math.floor(Math.random() * heroesHealth.length);
+        if (heroesHealth[n] < 100 && heroesHealth[n] > 0 && heroesHealth[3] > 0) {
+            Random random = new Random();
+            int heal = random.nextInt(100);
+            heroesHealth[n] = heal + heroesHealth[n];
+            System.out.println("Medic heals mate" + " " + heal);
+
         }
-    public static void medicHeal(){
-        int n = (int)Math.floor(Math.random() * heroesHealth.length);
-            if (heroesHealth[n] < 100 && heroesHealth[n]>0 && heroesHealth[3]>0){
-                Random random = new Random();
-                int heal = random.nextInt(100);
-                heroesHealth[n] = heal + heroesHealth[n];
-                System.out.println("Medic heals mate" + " " + heal);
 
-            }
-
-        }
-
+    }
 
 
     public static void changeDefence() {
